@@ -1,0 +1,147 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  background-color: #252529;
+  color: #fff;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Navbar */
+.head {
+  width: 100%;
+  background-color: #263c35;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 50px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-right: 20px;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #eee;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+#about {
+  margin-right: auto;
+}
+
+#openup {
+  margin-left: auto;
+  font-weight: bold;
+}
+
+/* Text and Titles */
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  margin-top: 70px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.lead {
+  font-size: 1.3rem;
+}
+
+/* Showcase Section */
+#showcase {
+  margin: 0;
+  padding: 0;
+  background: url('images/vin.jpg') no-repeat center/cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding-top: 60px; /* Offset for fixed navbar */
+}
+
+.title {
+  text-align: center;
+  margin-top: 350px;
+}
+
+/* Hover Effect */
+li:hover {
+  background-color: rgb(65, 91, 65);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .data li {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .title {
+    margin-top: 250px;
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  nav ul {
+    display: none; /* Hide navigation items for small screens */
+  }
+
+  nav #openup {
+    display: block;
+  }
+
+  .title {
+    margin-top: 150px;
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+}
